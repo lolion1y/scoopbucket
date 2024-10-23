@@ -1,0 +1,48 @@
+{
+    "version": "1.7.0",
+    "description": "Freeware Image & Animation Viewer for Windows",
+    "homepage": "https://www.nyam.pe.kr/dev/imagine/",
+    "license": {
+        "identifier": "Freeware",
+        "url": "https://www.nyam.pe.kr/dev/imagine/#license"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://raw.githubusercontent.com/nyam1003/imagine/main/x64/Imagine_1.7.0_x64_Unicode_Full.zip",
+            "hash": "fba72caf755f84b7b905555a3fbf6e9e5631bf6fd36f45558a96414e8bad2702",
+            "bin": "Imagine64.exe",
+            "shortcuts": [
+                [
+                    "Imagine64.exe",
+                    "Imagine"
+                ]
+            ]
+        },
+        "32bit": {
+            "url": "https://raw.githubusercontent.com/nyam1003/imagine/main/Imagine_1.7.0_Unicode_Full.zip",
+            "hash": "757dcd4d838bfd855ab29278f3753ea7e402b10662b2a22d7c5608e6c8c90fb3",
+            "bin": "Imagine.exe",
+            "shortcuts": [
+                [
+                    "Imagine.exe",
+                    "Imagine"
+                ]
+            ]
+        }
+    },
+    "pre_install": "if (!(Test-Path \"$persist_dir\\Imagine.ini\")) { New-Item \"$dir\\Imagine.ini\" | Out-Null }",
+    "persist": [
+        "Imagine.ini"
+    ],
+    "checkver": "v(\\d[\\d.]+)",
+    "autoupdate": {
+        "architecture": {
+           "64bit": {
+                "url": "https://raw.githubusercontent.com/nyam1003/imagine/main/x64/Imagine_$version_x64_Unicode.exe"
+            },
+           "32bit": {
+                "url": "https://raw.githubusercontent.com/nyam1003/imagine/main/Imagine_$version_Unicode.exe"
+            }
+        }
+    }
+}
