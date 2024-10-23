@@ -31,6 +31,14 @@
         }
     },
     "pre_install": "if (!(Test-Path \"$persist_dir\\Imagine.ini\")) { New-Item \"$dir\\Imagine.ini\" | Out-Null }",
+    "post_install": [
+        "if ( $architecture -eq '64bit' ) { Start-Process $dir\\Imagine64.exe -ArgumentList '/pref:106 /pref:121 /regcontextmenu' }",
+        "if ( $architecture -eq '32bit' ) { Start-Process $dir\\Imagine.exe -ArgumentList '/pref:106 /pref:121 /regcontextmenu' }"
+    ],
+    "pre_uninstall":[
+        "if ( $architecture -eq '64bit' ) { Start-Process $dir\\Imagine64.exe -ArgumentList '/uninstall /unregcontextmenu' -Wait }",
+        "if ( $architecture -eq '32bit' ) { Start-Process $dir\\Imagine.exe -ArgumentList '/uninstall /unregcontextmenu' -Wait }"
+    ],
     "persist": [
         "Imagine.ini"
     ],
