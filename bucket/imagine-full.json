@@ -46,10 +46,10 @@
     "autoupdate": {
         "architecture": {
            "64bit": {
-                "url": "https://raw.githubusercontent.com/nyam1003/imagine/main/x64/Imagine_$version_x64_Unicode.exe"
+                "url": "https://raw.githubusercontent.com/nyam1003/imagine/main/x64/Imagine_$version_x64_Unicode_Full.zip"
             },
            "32bit": {
-                "url": "https://raw.githubusercontent.com/nyam1003/imagine/main/Imagine_$version_Unicode.exe"
+                "url": "https://raw.githubusercontent.com/nyam1003/imagine/main/Imagine_$version_Unicode_Full.zip"
             }
         }
     }
