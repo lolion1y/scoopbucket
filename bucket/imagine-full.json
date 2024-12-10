@@ -1,5 +1,5 @@
 {
-    "version": "1.7.0",
+    "version": "1.7.1",
     "description": "Freeware Image & Animation Viewer for Windows",
     "homepage": "https://www.nyam.pe.kr/dev/imagine/",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://raw.githubusercontent.com/nyam1003/imagine/main/x64/Imagine_1.7.0_x64_Unicode_Full.zip",
-            "hash": "fba72caf755f84b7b905555a3fbf6e9e5631bf6fd36f45558a96414e8bad2702",
+            "url": "https://raw.githubusercontent.com/nyam1003/imagine/main/x64/Imagine_1.7.1_x64_Unicode_Full.zip",
+            "hash": "a110d07a43cd47e2c5895b0675ae83341d0046e28cc4cacbf951173bc0648db1",
             "bin": "Imagine64.exe",
             "shortcuts": [
                 [
@@ -19,8 +19,8 @@
             ]
         },
         "32bit": {
-            "url": "https://raw.githubusercontent.com/nyam1003/imagine/main/Imagine_1.7.0_Unicode_Full.zip",
-            "hash": "757dcd4d838bfd855ab29278f3753ea7e402b10662b2a22d7c5608e6c8c90fb3",
+            "url": "https://raw.githubusercontent.com/nyam1003/imagine/main/Imagine_1.7.1_Unicode_Full.zip",
+            "hash": "ca8b41808272aa02314f3f5b3cf44e7705dec5d49739b4582afe94807c24da11",
             "bin": "Imagine.exe",
             "shortcuts": [
                 [
@@ -35,20 +35,18 @@
         "if ( $architecture -eq '64bit' ) { Start-Process $dir\\Imagine64.exe -ArgumentList '/pref:106 /pref:121 /regcontextmenu' }",
         "if ( $architecture -eq '32bit' ) { Start-Process $dir\\Imagine.exe -ArgumentList '/pref:106 /pref:121 /regcontextmenu' }"
     ],
-    "pre_uninstall":[
+    "pre_uninstall": [
         "if ( $architecture -eq '64bit' ) { Start-Process $dir\\Imagine64.exe -ArgumentList '/uninstall /unregcontextmenu' -Wait }",
         "if ( $architecture -eq '32bit' ) { Start-Process $dir\\Imagine.exe -ArgumentList '/uninstall /unregcontextmenu' -Wait }"
     ],
-    "persist": [
-        "Imagine.ini"
-    ],
+    "persist": "Imagine.ini",
     "checkver": "v(\\d[\\d.]+)",
     "autoupdate": {
         "architecture": {
-           "64bit": {
+            "64bit": {
                 "url": "https://raw.githubusercontent.com/nyam1003/imagine/main/x64/Imagine_$version_x64_Unicode_Full.zip"
             },
-           "32bit": {
+            "32bit": {
                 "url": "https://raw.githubusercontent.com/nyam1003/imagine/main/Imagine_$version_Unicode_Full.zip"
             }
         }
