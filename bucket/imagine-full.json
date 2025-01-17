@@ -1,5 +1,5 @@
 {
-    "version": "1.7.2",
+    "version": "1.7.3",
     "description": "Freeware Image & Animation Viewer for Windows",
     "homepage": "https://www.nyam.pe.kr/dev/imagine/",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://raw.githubusercontent.com/nyam1003/imagine/main/x64/Imagine_1.7.2_x64_Unicode_Full.zip",
-            "hash": "192289e0cd72b7422515b435ef69e314d05f3e491311ed495b2d2ec66dff676d",
+            "url": "https://raw.githubusercontent.com/nyam1003/imagine/main/x64/Imagine_1.7.3_x64_Unicode_Full.zip",
+            "hash": "9eafac55bced764f82ffbb3aeba4f4165164c5366ae6e6bb50f0952de3b8ecc3",
             "bin": "Imagine64.exe",
             "shortcuts": [
                 [
@@ -19,8 +19,8 @@
             ]
         },
         "32bit": {
-            "url": "https://raw.githubusercontent.com/nyam1003/imagine/main/Imagine_1.7.2_Unicode_Full.zip",
-            "hash": "222cc54f59ced9c0d15c9abd93838d73eb1fc77e47d63077ec3bd7885cf05247",
+            "url": "https://raw.githubusercontent.com/nyam1003/imagine/main/Imagine_1.7.3_Unicode_Full.zip",
+            "hash": "3db6e2b5c529a4a5a27bcea6e9d6fb9c69e57492b5c5e951337c3eb0190c1169",
             "bin": "Imagine.exe",
             "shortcuts": [
                 [
