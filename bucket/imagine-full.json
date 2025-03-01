@@ -1,5 +1,5 @@
 {
-    "version": "1.8.1",
+    "version": "1.8.2",
     "description": "Freeware Image & Animation Viewer for Windows",
     "homepage": "https://www.nyam.pe.kr/dev/imagine/",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://raw.githubusercontent.com/nyam1003/imagine/main/x64/Imagine_1.8.1_x64_Unicode_Full.zip",
-            "hash": "85206323f3d6f911d1788c06018ee1a00302cdcb70b48738fcc43e4f123652b6",
+            "url": "https://raw.githubusercontent.com/nyam1003/imagine/main/x64/Imagine_1.8.2_x64_Unicode_Full.zip",
+            "hash": "b80edb26863a6fc70b65fcdab7c76da90625f76be443ab740cc8b55efe7ab4a0",
             "bin": "Imagine64.exe",
             "shortcuts": [
                 [
@@ -19,8 +19,8 @@
             ]
         },
         "32bit": {
-            "url": "https://raw.githubusercontent.com/nyam1003/imagine/main/Imagine_1.8.1_Unicode_Full.zip",
-            "hash": "5e3392c0b44e16929f79ab688f09cb393c3e5d14b66957f43143aab679e76b27",
+            "url": "https://raw.githubusercontent.com/nyam1003/imagine/main/Imagine_1.8.2_Unicode_Full.zip",
+            "hash": "27c6f34bb78cd2427894b7330cc15adfbca53bf8131f9710772c4a510ab86cb4",
             "bin": "Imagine.exe",
             "shortcuts": [
                 [
