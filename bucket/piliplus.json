@@ -18,7 +18,7 @@
             "PiliPlus"
         ]
     ],
-    "checkver": "[\\d.]+",
+    "checkver": "github",
     "autoupdate": {
         "url": "https://github.com/bggRGjQaUbCoE/PiliPlus/releases/download/$version/windows-release.zip"
     }
