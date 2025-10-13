@@ -16,7 +16,10 @@
             "PiliPlus"
         ]
     ],
-    "checkver": "github",
+    "checkver": {
+        "url": "https://api.github.com/repos/bggRGjQaUbCoE/PiliPlus/releases",
+        "jp": "$..tag_name"
+    },
     "autoupdate": {
         "url": "https://github.com/bggRGjQaUbCoE/PiliPlus/releases/download/$version/windows-release.zip"
     }
