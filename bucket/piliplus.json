@@ -17,11 +17,10 @@
         ]
     ],
     "checkver": {
-        "url": "https://api.github.com/repos/bggRGjQaUbCoE/PiliPlus/releases",
-        "regex": "\"tag_name\": \"(?<major>[\\d\\.]+)(?<version>\\.\\S+)\"[\\s\\S]*?(?<commit>\\+\\d+)",
-        "replace": "${major}${version}"
+        "url": "https://api.github.com/repos/bggRGjQaUbCoE/PiliPlus/releases/latest",
+        "regex": "\\/(?<version>[\\d\\.]+)(-.*)?\\/PiliPlus_android_(?<major>[\\d\\.]+)-(?<hash>\\w+)%2B(?<commit>\\d+)"
     },
     "autoupdate": {
-        "url": "https://github.com/bggRGjQaUbCoE/PiliPlus/releases/download/$matchmajor$matchversion/PiliPlus_windows_$matchmajor$matchcommit_x64.zip"
+        "url": "https://github.com/bggRGjQaUbCoE/PiliPlus/releases/download/$matchversion/PiliPlus_windows_$matchmajor$matchcommit_x64.zip"
     }
 }
