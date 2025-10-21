@@ -18,9 +18,9 @@
     ],
     "checkver": {
         "url": "https://api.github.com/repos/bggRGjQaUbCoE/PiliPlus/releases",
-        "jp": "$..tag_name"
+        "regex": "\"tag_name\": \"(?<major>[\\d\\.]+)(?<version>\\.\\S+)\"[\\s\\S]*?(?<commit>\\+\\d+)"
     },
     "autoupdate": {
-        "url": "https://github.com/bggRGjQaUbCoE/PiliPlus/releases/download/$version/windows-release.zip"
+        "url": "https://github.com/bggRGjQaUbCoE/PiliPlus/releases/download/$matchmajor$matchversion/PiliPlus_windows_$matchmajor$matchcommit_x64.zip"
     }
 }
