@@ -1,5 +1,5 @@
 {
-    "version": "7.13",
+    "version": "7.12",
     "description": "Powerful archive manager",
     "homepage": "https://rarlab.com/",
     "license": {
@@ -37,7 +37,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://www.rarlab.com/rar/winrar-x64-$cleanVersionsc.exe#/dl.7z"
+                "url": "https://www.win-rar.com/fileadmin/winrar-versions/partners/hua/winrar-x64-$cleanVersionsc.exe#/dl.7z"
             }
         }
     }
