@@ -40,7 +40,7 @@
         "if ( $architecture -eq '32bit' -and $cmd -eq 'uninstall' ) { Start-Process $dir\\Imagine.exe -ArgumentList '/uninstall /unregcontextmenu' -Wait }"
     ],
     "persist": "Imagine.ini",
-    "checkver": "v(\\d[\\d.]+)",
+    "checkver": "v([\\d.]+)",
     "autoupdate": {
         "architecture": {
             "64bit": {
