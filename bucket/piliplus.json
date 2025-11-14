@@ -1,13 +1,13 @@
 {
-    "version": "1.1.5-pre3",
+    "version": "1.1.5-pre4",
     "description": "A third-party BiliBili client developed with Flutter.",
     "homepage": "https://github.com/bggRGjQaUbCoE/PiliPlus",
     "license": {
         "identifier": "GPL-3.0",
         "url": "https://github.com/bggRGjQaUbCoE/PiliPlus/blob/main/LICENSE"
     },
-    "url": "https://github.com/bggRGjQaUbCoE/PiliPlus/releases/download/1.1.5-pre3/PiliPlus_windows_1.1.5+4337_x64.zip",
-    "hash": "71be78d9253d10e48090b42436757e40eecb8ea767d90871288657ef308a7bf5",
+    "url": "https://github.com/bggRGjQaUbCoE/PiliPlus/releases/download/1.1.5-pre4/PiliPlus_windows_1.1.5+4347_x64.zip",
+    "hash": "2670a8cb25616a681240fb7ca665c0b22ffd643f9895089a3dfae79c08ff4399",
     "extract_dir": "PiliPlus-Win",
     "bin": "piliplus.exe",
     "shortcuts": [
