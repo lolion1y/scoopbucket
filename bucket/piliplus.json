@@ -21,6 +21,6 @@
         "regex": "\\/([\\d.]+(?:-\\w+)?)/PiliPlus_android_[\\d.]+-(?<hash>\\w+)%2B(?<commit>\\d+)"
     },
     "autoupdate": {
-        "url": "https://github.com/bggRGjQaUbCoE/PiliPlus/releases/download/$version/PiliPlus_windows_$matchHead+$matchCommit_x64.zip"
+        "url": "https://github.com/bggRGjQaUbCoE/PiliPlus/releases/download/$version/PiliPlus_windows_$matchHead+$matchCommit_x64_portable.zip"
     }
 }
