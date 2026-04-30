@@ -1,5 +1,5 @@
 {
-    "version": "7.20",
+    "version": "7.21",
     "description": "Powerful archive manager",
     "homepage": "https://rarlab.com/",
     "license": {
@@ -9,8 +9,8 @@
     "notes": "Set up context menu within settings window.",
     "architecture": {
         "64bit": {
-            "url": "https://www.win-rar.com/fileadmin/winrar-versions/partners/hua/winrar-x64-720sc.exe#/dl.7z",
-            "hash": "78fa3978f7d7ffd228ec4400e69c4123ded4b77f77b4a32eabfd8bf380eddbfb"
+            "url": "https://www.win-rar.com/fileadmin/winrar-versions/partners/hua/winrar-x64-721sc.exe#/dl.7z",
+            "hash": "b00c1641863a91cca41af9ae2918b7e50218aeb8bdd628c0df441f41950f37cf"
         }
     },
     "pre_install": [
