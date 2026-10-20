@@ -12,6 +12,7 @@
             "hash": "7e7a4292a1f8603b157b2ce4006e986a9db41c1f5f94bfbdb4baec9ef452b8ba"
         }
     },
+    "pre_install": "Remove-Item \"$dir\\Updater.exe\" -Force -ErrorAction SilentlyContinue",
     "bin": "Yurigram.exe",
     "shortcuts": [
         [
