@@ -1,0 +1,34 @@
+{
+    "version": "7.2.1",
+    "description": "Yet another 3rd-party tdesktop client. AUV!",
+    "homepage": "https://github.com/NahidaBuer/Aywgram",
+    "license": {
+        "identifier": "GPL-3.0-openssl-exception",
+        "url": "https://github.com/NahidaBuer/Aywgram/blob/main/LICENSE"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "",
+            "hash": ""
+        }
+    },
+    "bin": "AywGram.exe",
+    "shortcuts": [
+        [
+            "AywGram.exe",
+            "AywGram"
+        ]
+    ],
+    "persist": "tdata",
+    "checkver": {
+        "url": "https://github.com/NahidaBuer/Aywgram/releases/download/metadata/update-metadata.json",
+        "jp": "$.targets.windows-x86_64.version_name"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/NahidaBuer/Aywgram/releases/download/pre-release-v$version/AywGram-v$version-windows-x86_64.zip"
+            }
+        }
+    }
+}
