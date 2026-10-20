@@ -1,5 +1,5 @@
 {
-    "version": "7.2.1",
+    "version": "7.2.8-2",
     "description": "Yet another 3rd-party tdesktop client. AUV!",
     "homepage": "https://github.com/NahidaBuer/Aywgram",
     "license": {
@@ -9,7 +9,7 @@
     "architecture": {
         "64bit": {
             "url": "",
-            "hash": ""
+            "hash": "29303ae7256dc2c8bb01ea068c63d40dbd1696f2210bdfe932eeca563d451239"
         }
     },
     "bin": "AywGram.exe",
