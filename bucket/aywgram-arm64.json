@@ -7,7 +7,7 @@
         "url": "https://github.com/NahidaBuer/Aywgram/blob/main/LICENSE"
     },
     "architecture": {
-        "64bit": {
+        "arm64": {
             "url": "https://github.com/NahidaBuer/Aywgram/releases/download/pre-release-v7.2.8-2/AywGram-v7.2.8-2-windows-arm64.zip",
             "hash": "29303ae7256dc2c8bb01ea068c63d40dbd1696f2210bdfe932eeca563d451239"
         }
@@ -26,7 +26,7 @@
     },
     "autoupdate": {
         "architecture": {
-            "64bit": {
+            "arm64": {
                 "url": "https://github.com/NahidaBuer/Aywgram/releases/download/pre-release-v$version/AywGram-v$version-windows-arm64.zip"
             }
         }
