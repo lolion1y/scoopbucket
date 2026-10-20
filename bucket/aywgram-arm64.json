@@ -8,7 +8,7 @@
     },
     "architecture": {
         "64bit": {
-            "url": "",
+            "url": "https://github.com/NahidaBuer/Aywgram/releases/download/pre-release-v7.2.8-2/AywGram-v7.2.8-2-windows-arm64.zip",
             "hash": "29303ae7256dc2c8bb01ea068c63d40dbd1696f2210bdfe932eeca563d451239"
         }
     },
