@@ -1,0 +1,31 @@
+{
+    "version": "7.2.1",
+    "description": "Yet another 3rd-party tdesktop client. Rua.",
+    "homepage": "https://github.com/Revincx/Yurigram",
+    "license": {
+        "identifier": "GPL-3.0-openssl-exception",
+        "url": "https://github.com/Revincx/Yurigram/blob/dev/LICENSE"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/Revincx/Yurigram/releases/download/7.2.1/Yurigram_Win_7.2.1_x64.zip",
+            "hash": "0721"
+        }
+    },
+    "bin": "Yurigram.exe",
+    "shortcuts": [
+        [
+            "Yurigram.exe",
+            "Yurigram"
+        ]
+    ],
+    "persist": "tdata",
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/Revincx/Yurigram/releases/download/$version/Yurigram_Win_$version_x64.zip"
+            }
+        }
+    }
+}
