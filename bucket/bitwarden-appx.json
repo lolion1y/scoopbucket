@@ -1,0 +1,45 @@
+{
+    "version": "2026.10.1",
+    "description": "Bitwarden desktop AppX/MSIX packaged build",
+    "homepage": "https://bitwarden.com/",
+    "license": {
+        "identifier": "GPL-3.0-or-later",
+        "url": "https://github.com/bitwarden/clients/blob/main/LICENSE.txt"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/bitwarden/clients/releases/download/desktop-v2026.10.1/Bitwarden-2026.10.1-x64.appx",
+            "hash": "e19950dbc05312eac6d504338811cb037d0b617dff88df0cd2a71dde07b9b422"
+        },
+        "arm64": {
+            "url": "https://github.com/bitwarden/clients/releases/download/desktop-v2026.10.1/Bitwarden-2026.10.1-arm64.appx",
+            "hash": "30c4e6bc6383bc5c4845c90ab2f95538ed3ab3743b11cc4b8af0ef7ddeb53598"
+        }
+    },
+    "pre_install": [
+        "# Install Appx package",
+        "# note: using '3>$null' to omit warning message. Also, '-SkipEditionCheck' does not work for Appx module",
+        "if ($PSVersionTable.PSVersion.Major -ge 6) { Import-Module Appx -UseWindowsPowerShell 3>$null }",
+        "Add-AppxPackage \"$dir\\$fname\""
+    ],
+    "post_install": "Remove-Item \"$dir\\$fname\" -ErrorAction SilentlyContinue",
+    "pre_uninstall": [
+        "if ($PSVersionTable.PSVersion.Major -ge 6) { Import-Module Appx -UseWindowsPowerShell 3>$null }",
+        "Get-AppxPackage '8bitSolutionsLLC.bitwardendesktop' | Remove-AppxPackage"
+    ],
+    "checkver": {
+        "github": "https://api.github.com/repos/bitwarden/clients/releases",
+        "jp": "$[*].tag_name",
+        "re": "desktop-v([\\d.]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/bitwarden/clients/releases/download/desktop-v$version/Bitwarden-$version-x64.appx"
+            },
+            "arm64": {
+                "url": "https://github.com/bitwarden/clients/releases/download/desktop-v$version/Bitwarden-$version-arm64.appx"
+            }
+        }
+    }
+}
