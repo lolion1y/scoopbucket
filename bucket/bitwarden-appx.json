@@ -1,5 +1,5 @@
 {
-    "version": "2026.10.1",
+    "version": "2026.10.2",
     "description": "Bitwarden desktop AppX/MSIX packaged build",
     "homepage": "https://bitwarden.com/",
     "license": {
@@ -8,12 +8,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/bitwarden/clients/releases/download/desktop-v2026.10.1/Bitwarden-2026.10.1-x64.appx",
-            "hash": "e19950dbc05312eac6d504338811cb037d0b617dff88df0cd2a71dde07b9b422"
+            "url": "https://github.com/bitwarden/clients/releases/download/desktop-v2026.10.2/Bitwarden-2026.10.2-x64.appx",
+            "hash": "9fb209179e99bd3c56028e138b699f642ce254b4badf70dc09e1d7771860ed9a"
         },
         "arm64": {
-            "url": "https://github.com/bitwarden/clients/releases/download/desktop-v2026.10.1/Bitwarden-2026.10.1-arm64.appx",
-            "hash": "30c4e6bc6383bc5c4845c90ab2f95538ed3ab3743b11cc4b8af0ef7ddeb53598"
+            "url": "https://github.com/bitwarden/clients/releases/download/desktop-v2026.10.2/Bitwarden-2026.10.2-arm64.appx",
+            "hash": "4c9bc950c7c33e4a8c97a526c0922e672d5f55bf9732c1cd0c500980e1e584ee"
         }
     },
     "pre_install": [
