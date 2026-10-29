@@ -1,0 +1,44 @@
+{
+    "version": "0.1.1",
+    "description": "Unified model, provider, and gateway manager for AI coding agents. 77",
+    "homepage": "https://github.com/lingqiqi5211/moepie",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/lingqiqi5211/moepie/releases/download/v0.1.1/moepie-windows-amd64.exe#/moepie.exe",
+            "hash": "97188c0d8434658ee064fe51ef79cebe2b7b24fb205e000380914f18a83856ac"
+        },
+        "arm64": {
+            "url": "https://github.com/lingqiqi5211/moepie/releases/download/v0.1.1/moepie-windows-arm64.exe#/moepie.exe",
+            "hash": "cc0d98872842c55e9c8d213db81545bc2cdef14cd4267b1bca6936402c87a64d"
+        }
+    },
+    "pre_install": [
+        "if (-not (Test-Path -LiteralPath \"$persist_dir\\data\\settings.json\" -PathType Leaf)) {",
+        "    ensure \"$dir\\data\" | Out-Null",
+        "    @{ noAutoUpdate = $true } | ConvertTo-Json | Set-Content -LiteralPath \"$dir\\data\\settings.json\" -Force -Encoding ASCII",
+        "}"
+    ],
+    "bin": "moepie.exe",
+    "shortcuts": [
+        [
+            "moepie.exe",
+            "Moepie"
+        ]
+    ],
+    "persist": "data",
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/lingqiqi5211/moepie/releases/download/v$version/moepie-windows-amd64.exe#/moepie.exe"
+            },
+            "arm64": {
+                "url": "https://github.com/lingqiqi5211/moepie/releases/download/v$version/moepie-windows-arm64.exe#/moepie.exe"
+            }
+        },
+        "hash": {
+            "url": "$baseurl/SHA256SUMS"
+        }
+    }
+}
