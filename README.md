@@ -10,8 +10,8 @@ Bucket for [Scoop](https://scoop.sh), the Windows command-line installer.
 After manifests have been committed and pushed, run the following:
 
 ```pwsh
-scoop bucket add scoop0721 https://github.com/lolion1y/scoopbucket
-scoop install scoop0721/<manifestname>
+scoop bucket add loli https://github.com/lolion1y/scoopbucket
+scoop install loli/<manifestname>
 ```
 
 ## How do I contribute new manifests?
