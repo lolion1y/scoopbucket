@@ -24,8 +24,10 @@
     ],
     "post_install": "Remove-Item \"$dir\\$fname\" -ErrorAction SilentlyContinue",
     "pre_uninstall": [
-        "if ($PSVersionTable.PSVersion.Major -ge 6) { Import-Module Appx -UseWindowsPowerShell 3>$null }",
-        "Get-AppxPackage '8bitSolutionsLLC.bitwardendesktop' | Remove-AppxPackage"
+        "if ($cmd -eq 'uninstall') {",
+        "    if ($PSVersionTable.PSVersion.Major -ge 6) { Import-Module Appx -UseWindowsPowerShell 3>$null }",
+        "    Get-AppxPackage '8bitSolutionsLLC.bitwardendesktop' | Remove-AppxPackage",
+        "}"
     ],
     "checkver": {
         "github": "https://api.github.com/repos/bitwarden/clients/releases",
