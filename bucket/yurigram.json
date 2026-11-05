@@ -1,5 +1,5 @@
 {
-    "version": "7.3.1-1",
+    "version": "7.3.5-1",
     "description": "Yet another 3rd-party tdesktop client. Rua.",
     "homepage": "https://github.com/Revincx/Yurigram",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Revincx/Yurigram/releases/download/7.3.1-1/Yurigram_Win_7.3.1-1_x64.zip",
-            "hash": "7e7a4292a1f8603b157b2ce4006e986a9db41c1f5f94bfbdb4baec9ef452b8ba"
+            "url": "https://github.com/Revincx/Yurigram/releases/download/7.3.5-1/Yurigram_Win_7.3.5-1_x64.zip",
+            "hash": "eba9d0c0a331547410028e42f25aa44746c209054aa645c9baa536c8f2d0d58e"
         }
     },
     "pre_install": "Remove-Item \"$dir\\Updater.exe\" -Force -ErrorAction SilentlyContinue",
