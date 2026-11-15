@@ -1,16 +1,16 @@
 {
-    "version": "0.1.8",
+    "version": "0.1.9",
     "description": "Unified model, provider, and gateway manager for AI coding agents. 77",
     "homepage": "https://github.com/lingqiqi5211/moepie",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/lingqiqi5211/moepie/releases/download/v0.1.8/moepie-windows-amd64.exe#/moepie.exe",
-            "hash": "f408aa464a2cfcb754c970c4899db457800cd6513f98eb8b005cd1018a2c35da"
+            "url": "https://github.com/lingqiqi5211/moepie/releases/download/v0.1.9/moepie-windows-amd64.exe#/moepie.exe",
+            "hash": "808216839ff85d2a09dd9944c84a06ec4a799817cc2ad339b23ce81fb86ae325"
         },
         "arm64": {
-            "url": "https://github.com/lingqiqi5211/moepie/releases/download/v0.1.8/moepie-windows-arm64.exe#/moepie.exe",
-            "hash": "0970b3747b530442bda3e041a55440e8da9f4b05132ab2d01c5b0fd2b8a8572d"
+            "url": "https://github.com/lingqiqi5211/moepie/releases/download/v0.1.9/moepie-windows-arm64.exe#/moepie.exe",
+            "hash": "9b89dda96c99b7e08f709702d5b958767997248d2523e7fccfb799ae2fd1f019"
         }
     },
     "pre_install": [
